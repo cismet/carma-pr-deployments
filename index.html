@@ -3,35 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>No Deployment Yet</title>
+    <title>CARMA PR Deployments</title>
     <style>
       body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
-        font-family: Arial, sans-serif; /* Non-serif font */
+        font-family: Arial, sans-serif;
         background-color: #f4f4f4;
       }
       .container {
         text-align: center;
+        max-width: 600px;
+        padding: 2rem;
+      }
+      .logo {
+        max-width: 300px;
+        margin-bottom: 2rem;
+      }
+      .title {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 1rem;
+        font-weight: bold;
       }
       .message {
-        margin-top: 20px;
-        font-size: 24px;
-        color: #333;
+        font-size: 18px;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+      .link {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.75rem 2rem;
+        background: #0366d6;
+        color: white;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: background 0.3s;
+      }
+      .link:hover {
+        background: #0256c4;
+      }
+      .info {
+        margin-top: 2rem;
+        padding: 1rem;
+        background: #fff;
+        border-radius: 0.5rem;
+        font-size: 14px;
+        color: #666;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <!-- Update 'logo.png' to the path of your logo file or URL -->
       <img
         src="https://cismet.de/images/cismet_signet_rgb_buntesC.png"
-        alt="Company Logo"
+        alt="cismet Logo"
+        class="logo"
       />
-      <div class="message">No deployment yet</div>
+      <div class="title">CARMA PR Deployments</div>
+      <div class="message">
+        This is the preview deployment repository for CARMA pull requests.
+      </div>
+      <div class="message">
+        To access a specific PR deployment, use the URL format:<br />
+        <code style="background: #e8e8e8; padding: 0.25rem 0.5rem; border-radius: 0.25rem;">
+          /[PR_NUMBER]/[PROJECT_NAME]/
+        </code>
+      </div>
+      <a href="https://github.com/helllth/carma/pulls" class="link">
+        View Pull Requests →
+      </a>
+      <div class="info">
+        💡 Each pull request with a <code>deploy: ["project1","project2"]</code> directive
+        in its description will have its projects deployed here automatically.
+      </div>
     </div>
   </body>
 </html>
