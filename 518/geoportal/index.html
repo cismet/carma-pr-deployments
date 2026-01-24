@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <script>
+      // prevents cesium bundle from causing uncaught errors when bundled.
+      // TODO Replace with a proper lazy loading of cesium
+      if (typeof TransformStream === "undefined") {
+        console.warn(
+          "Die TransformStream API wird von diesem Browser nicht unterstützt. Bitte benutzen sie einen unterstützten Browser."
+        );
+        class DummyTransformStream {
+          constructor() {
+            this.readable = null;
+            this.writable = null;
+            this.isDummy = true;
+          }
+        }
+        window.TransformStream = DummyTransformStream;
+      }
+    </script>
+    <meta charset="utf-8" />
+    <title>DigiTal Zwilling / Geoportal</title>
+    <base href="/" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no, interactive-widget=resizes-content"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <link rel="icon" type="image/x-icon" href="https://cismet.github.io/carma-pr-deployments/518/geoportal/favicon.ico" />
+
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="DigiTal Zwilling / Geoportal"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/apple-touch-icon-180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/apple-touch-icon-167.png"
+    />
+    <!-- iPad Pro -->
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/apple-touch-icon-152.png"
+    />
+    <!-- iPad / older -->
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/apple-touch-icon-120.png"
+    />
+
+    <!-- Portrait -->
+
+    <!-- iPad (Mini/Air/9.7) — 1536×2048 / 2048×1536 -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/splashscreens/ipad-768x1024@2-portrait.png"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+
+    <!-- iPad Pro 10.5" — 1668×2224 / 2224×1668 -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/splashscreens/ipad-834x1112@2-portrait.png"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+
+    <!-- iPad Pro 11" — 1668×2388 / 2388×1668 -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/splashscreens/ipad-834x1194@2-portrait.png"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+
+    <!-- iPad Pro 12.9" — 2048×2732 / 2732×2048 -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/splashscreens/ipad-1024x1366@2-portrait.png"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+
+    <!-- Landscape -->
+
+    <!-- iPad (Mini/Air/9.7) — landscape should be 1024×768 -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/splashscreens/ipad-768x1024@2-landscape.png"
+      media="(device-width: 1024px) and (device-height: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+
+    <!-- iPad Pro 10.5" — landscape should be 1112×834 -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/splashscreens/ipad-834x1112@2-landscape.png"
+      media="(device-width: 1112px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+
+    <!-- iPad Pro 11" — landscape should be 1194×834 -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/splashscreens/ipad-834x1194@2-landscape.png"
+      media="(device-width: 1194px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+
+    <!-- iPad Pro 12.9" — landscape should be 1366×1024 -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/518/geoportal/splashscreens/ipad-1024x1366@2-landscape.png"
+      media="(device-width: 1366px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+
+    <title>DigiTal Zwilling / Geoportal</title>
+
+    <script type="module" crossorigin src="https://cismet.github.io/carma-pr-deployments/518/geoportal/assets/index-CHpPFkzy.js"></script>
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/518/geoportal/assets/vendor-react-core-CRrn4hQB.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/518/geoportal/assets/vendor-cesium-DB96H_Ua.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/518/geoportal/assets/vendor-leaflet-YGEtm0vP.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/518/geoportal/assets/vendor-ui-C8teX8eS.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/518/geoportal/assets/vendor-ui-icons-DhvAjFgQ.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/518/geoportal/assets/vendor-cismap-tzWQTXCD.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/518/geoportal/assets/vendor-maplibre-CEDzdjTZ.js">
+    <link rel="stylesheet" crossorigin href="https://cismet.github.io/carma-pr-deployments/518/geoportal/assets/vendor-cismap-UolN10iZ.css">
+    <link rel="stylesheet" crossorigin href="https://cismet.github.io/carma-pr-deployments/518/geoportal/assets/index-Dv7-iVrP.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
