@@ -1,1 +1,0 @@
-Kein Hintergrund, da diese Karte ohne Konfiguration aufgerufen wurde.
