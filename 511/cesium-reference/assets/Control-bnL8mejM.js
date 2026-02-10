@@ -1,0 +1,1 @@
+import{ds as a,r as m,j as r}from"./index-C1A2ys7a.js";function x({position:o,children:t,order:n}){const{addControl:e,removeControl:s}=a();return m.useEffect(()=>(e({position:o,component:t,order:n}),()=>{s({position:o,component:t,order:n})}),[t]),r.jsx(r.Fragment,{})}export{x as C};
