@@ -1,0 +1,1 @@
+import{dr as a,r as m,j as n}from"./index-Dpc3vb6_.js";function x({position:o,children:t,order:r}){const{addControl:e,removeControl:s}=a();return m.useEffect(()=>(e({position:o,component:t,order:r}),()=>{s({position:o,component:t,order:r})}),[t]),n.jsx(n.Fragment,{})}export{x as C};
