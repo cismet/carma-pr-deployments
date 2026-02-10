@@ -1,0 +1,1 @@
+import{j as o}from"./index-DxHzO360.js";const s=({children:t})=>o.jsx("div",{style:{position:"absolute",bottom:10,right:10,left:10,padding:"10px",background:"rgba(255, 255, 255, 0.85)"},children:t});export{s as U};
