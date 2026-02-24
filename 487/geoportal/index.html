@@ -18,6 +18,14 @@
         window.TransformStream = DummyTransformStream;
       }
     </script>
+    <script>
+      if (
+        navigator.standalone ||
+        window.matchMedia("(display-mode: standalone)").matches
+      ) {
+        document.documentElement.classList.add("pwa-standalone");
+      }
+    </script>
     <meta charset="utf-8" />
     <title>DigiTal Zwilling / Geoportal</title>
     <base href="/" />
@@ -28,6 +36,7 @@
     <meta name="mobile-web-app-capable" content="yes" />
 
     <link rel="icon" type="image/x-icon" href="https://cismet.github.io/carma-pr-deployments/487/geoportal/favicon.ico" />
+    <link rel="manifest" href="https://cismet.github.io/carma-pr-deployments/487/geoportal/manifest.json" />
 
     <meta name="theme-color" content="#000000" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -59,7 +68,100 @@
       href="https://cismet.github.io/carma-pr-deployments/487/geoportal/apple-touch-icon-120.png"
     />
 
-    <!-- Portrait -->
+    <!-- iPhone Portrait -->
+
+    <!-- iPhone 5/SE — 320x568@2x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-320x568@2-portrait.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+
+    <!-- iPhone 6/7/8 — 375x667@2x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-375x667@2-portrait.png"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+
+    <!-- iPhone X/XS/11 Pro — 375x812@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-375x812@3-portrait.png"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+
+    <!-- iPhone 12/13 Mini — 360x780@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-360x780@3-portrait.png"
+      media="(device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+
+    <!-- iPhone 12/13/14 — 390x844@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-390x844@3-portrait.png"
+      media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+
+    <!-- iPhone 6+/7+/8+ — 414x736@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x736@3-portrait.png"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+
+    <!-- iPhone XR/11 — 414x896@2x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x896@2-portrait.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+
+    <!-- iPhone XS Max/11 Pro Max — 414x896@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x896@3-portrait.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+
+    <!-- iPhone 12/13/14 Pro Max — 428x926@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-428x926@3-portrait.png"
+      media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+
+    <!-- iPhone 15 Pro Max — 430x932@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-430x932@3-portrait.png"
+      media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+
+    <!-- iPhone 14 Pro / 15 / 15 Pro / 16 — 393x852@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-393x852@3-portrait.png"
+      media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+
+    <!-- iPhone 16 Pro — 402x874@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-402x874@3-portrait.png"
+      media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+
+    <!-- iPhone 16 Pro Max — 440x956@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-440x956@3-portrait.png"
+      media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+
+    <!-- iPad Portrait -->
 
     <!-- iPad (Mini/Air/9.7) — 1536×2048 / 2048×1536 -->
     <link
@@ -89,7 +191,100 @@
       media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
     />
 
-    <!-- Landscape -->
+    <!-- iPhone Landscape -->
+
+    <!-- iPhone 5/SE — 320x568@2x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-320x568@2-landscape.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+
+    <!-- iPhone 6/7/8 — 375x667@2x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-375x667@2-landscape.png"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+
+    <!-- iPhone X/XS/11 Pro — 375x812@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-375x812@3-landscape.png"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+
+    <!-- iPhone 12/13 Mini — 360x780@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-360x780@3-landscape.png"
+      media="(device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+
+    <!-- iPhone 12/13/14 — 390x844@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-390x844@3-landscape.png"
+      media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+
+    <!-- iPhone 6+/7+/8+ — 414x736@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x736@3-landscape.png"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+
+    <!-- iPhone XR/11 — 414x896@2x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x896@2-landscape.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+
+    <!-- iPhone XS Max/11 Pro Max — 414x896@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x896@3-landscape.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+
+    <!-- iPhone 12/13/14 Pro Max — 428x926@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-428x926@3-landscape.png"
+      media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+
+    <!-- iPhone 15 Pro Max — 430x932@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-430x932@3-landscape.png"
+      media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+
+    <!-- iPhone 14 Pro / 15 / 15 Pro / 16 — 393x852@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-393x852@3-landscape.png"
+      media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+
+    <!-- iPhone 16 Pro — 402x874@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-402x874@3-landscape.png"
+      media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+
+    <!-- iPhone 16 Pro Max — 440x956@3x -->
+    <link
+      rel="apple-touch-startup-image"
+      href="https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-440x956@3-landscape.png"
+      media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+
+    <!-- iPad Landscape -->
 
     <!-- iPad (Mini/Air/9.7) — landscape should be 1024×768 -->
     <link
@@ -121,18 +316,249 @@
 
     <title>DigiTal Zwilling / Geoportal</title>
 
-    <script type="module" crossorigin src="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/index-CnJdalph.js"></script>
+    <style>
+      #splash-loading {
+        display: none;
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100dvh;
+        background-color: #000000;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/base_blurred.jpg");
+        z-index: 0;
+      }
+
+      html.pwa-standalone #splash-loading {
+        display: block;
+      }
+
+      /* ── iPhone Portrait ── */
+
+      @media (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-320x568@2-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-375x667@2-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-375x812@3-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-360x780@3-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-390x844@3-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x736@3-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x896@2-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x896@3-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-428x926@3-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-430x932@3-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-393x852@3-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-402x874@3-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-440x956@3-portrait.jpg");
+        }
+      }
+
+      /* ── iPad Portrait ── */
+
+      @media (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/ipad-768x1024@2-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/ipad-834x1112@2-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/ipad-834x1194@2-portrait.jpg");
+        }
+      }
+
+      @media (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/ipad-1024x1366@2-portrait.jpg");
+        }
+      }
+
+      /* ── iPhone Landscape ── */
+
+      @media (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-320x568@2-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-375x667@2-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-375x812@3-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-360x780@3-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-390x844@3-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x736@3-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x896@2-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-414x896@3-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-428x926@3-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-430x932@3-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-393x852@3-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-402x874@3-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/iphone-440x956@3-landscape.jpg");
+        }
+      }
+
+      /* ── iPad Landscape ── */
+
+      @media (device-width: 1024px) and (device-height: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/ipad-768x1024@2-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 1112px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/ipad-834x1112@2-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 1194px) and (device-height: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/ipad-834x1194@2-landscape.jpg");
+        }
+      }
+
+      @media (device-width: 1366px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+        #splash-loading {
+          background-image: url("https://cismet.github.io/carma-pr-deployments/487/geoportal/splashscreens/ipad-1024x1366@2-landscape.jpg");
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/index-DjiCid3y.js"></script>
     <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-react-core-CRrn4hQB.js">
-    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-cesium-Cs5ukME5.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-cesium-DRIGSg0E.js">
     <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-leaflet-YGEtm0vP.js">
     <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-ui-C8teX8eS.js">
-    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-ui-icons-DgFWyMxp.js">
-    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-cismap-B7jMXjTT.js">
-    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-maplibre-CEDzdjTZ.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-ui-icons-CcLIB72t.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-cismap-5igdahY1.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-maplibre-C5kFr-3E.js">
     <link rel="stylesheet" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/vendor-cismap-CB5gx4DQ.css">
-    <link rel="stylesheet" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/index-DSizrbaX.css">
+    <link rel="stylesheet" crossorigin href="https://cismet.github.io/carma-pr-deployments/487/geoportal/assets/index-CirbcK3z.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><div id="splash-loading"></div></div>
   </body>
 </html>
