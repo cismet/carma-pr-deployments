@@ -1,1 +1,0 @@
-const e={parameters:{layout:"fullscreen",options:{panelPosition:"right",storySort:{order:["Mapping",["Gizmo","Cesium","MapFrameworkSwitcher","ViewSync","Annotations"],"Providers",["LabelOverlay"],"Common",["UI","SVG"]]}},controls:{expanded:!1,sort:"requiredFirst"}}};export{e as default};
