@@ -1,0 +1,1 @@
+import{f}from"./formatSignificantNumber-DYV3PWeu.js";const h=4999,i=(e,r)=>{if(!Number.isFinite(e)||e<=0)return"0 m²";const m=(r==null?void 0:r.hectareThresholdSquareMeters)??h,c={locale:r==null?void 0:r.locale,significantDigits:r==null?void 0:r.significantDigits};return e>m?`${f(e/1e4,c)} ha`:`${f(e,c)} m²`};export{i as f};
