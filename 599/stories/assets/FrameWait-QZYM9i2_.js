@@ -1,0 +1,1 @@
+import{i as s}from"./carma-guards-BtvAAFzM.js";const a=(e,r=1,n="postRender")=>new Promise(o=>{let t=0;const i=()=>{t+=1,t>=r?(e[n].removeEventListener(i),o()):e.requestRender()};e[n].addEventListener(i),e.requestRender()}),w=async(e,r=1)=>{if(await a(e,r,"postRender"),!s(e))throw new Error("Scene became invalid during waiting")};export{w as e,a as w};
