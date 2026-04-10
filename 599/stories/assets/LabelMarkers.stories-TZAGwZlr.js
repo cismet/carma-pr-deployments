@@ -1,0 +1,16 @@
+import{j as a}from"./jsx-runtime-DCY474Ph.js";import{L as g,a as u,b as E,R as A,c as R,d as L,P as b}from"./LabelMarkers.story-helpers-B_ln4_2U.js";import"./index-f9CH5uyH.js";import"./draggable-debug-anchor-dzHjQJrf.js";import"./clamp-co6UzHBn.js";import"./pi-BNTPxsWB.js";import"./AnnotationsProvider-I5aEfGf5.js";import"./Elevation-Df6t6glL.js";import"./three.module-DONvljao.js";import"./geodetic-BSEHKtgU.js";import"./negative-pi-to-pi-B-FiLZ9M.js";import"./useCesiumPointMoveGizmo-231riHBL.js";import"./geometry2d-BgvfrEuo.js";import"./wms-BW9Y-bW-.js";import"./Scene-DSP-k13q.js";import"./private-shims-5e5gEO17.js";import"./useCesiumFovWheelZoom-J-ek2TF_.js";import"./maplibre-gl-BBJZaB-w.js";import"./LineVisualizer-CBcDdGuk.js";import"./index-o4jIgCFn.js";import"./CesiumWidget-NlFDFwhg.js";import"./sampleTerrainMostDetailed-C63Jdneu.js";import"./ua-parser-0QB0ixyC.js";import"./context-Bgtk6aWc.js";import"./Compact-DY2GpRF9.js";import"./index-hOhbk_Y8.js";import"./ControlButtonStyler-QeN6XDzf.js";import"./Picking-hZn3ElU-.js";import"./carma-guards-E6J4PeWi.js";import"./svgProjection-__xSi-EC.js";import"./constants-C6-_E4xW.js";import"./useLabelOverlay-AiWGW5EX.js";import"./annotation-cursor-overlay-style-XiGFUjvg.js";import"./previewController.shared-CoQntIiL.js";import"./angles-BLPjYNfA.js";import"./CoordinateAdapters-Cf7uwSr_.js";import"./line-generator-BhdE245q.js";import"./lineLabelPlacement-DH-xU3MF.js";/* empty css                                      */import"./config-DK-Yn5EA.js";import"./area-format-BCgxvIac.js";import"./formatSignificantNumber-DYV3PWeu.js";import"./locales-DbHdB30_.js";import"./length-format-BQI28fDZ.js";import"./decimal-format-B9rCT_ZY.js";import"./angle-format-BltzkWdt.js";import"./geographicCoordinateDisplay-6sMuKa83.js";import"./barmen-background-DVF7bcAM.js";import"./centered-story-frame-yE7WSmSo.js";const Er={title:"Overlay/Labels",args:g,argTypes:u,parameters:{layout:"fullscreen",...E}},o={name:"States and Themes",args:{...A},render:r=>a.jsx(R,{...r})},t={name:"Backgrounds",args:{storyBackground:"urban"},render:r=>a.jsx(L,{...r})},e={name:"Component",render:r=>a.jsx(b,{...r})};var m,s,p;o.parameters={...o.parameters,docs:{...(m=o.parameters)==null?void 0:m.docs,source:{originalSource:`{
+  name: "States and Themes",
+  args: {
+    ...REPRESENTATIVE_CASES_STORY_ARGS
+  },
+  render: args => <LabelStatesAndThemesStory {...args} />
+}`,...(p=(s=o.parameters)==null?void 0:s.docs)==null?void 0:p.source}}};var n,i,c;t.parameters={...t.parameters,docs:{...(n=t.parameters)==null?void 0:n.docs,source:{originalSource:`{
+  name: "Backgrounds",
+  args: {
+    storyBackground: "urban"
+  },
+  render: args => <LabelBackgroundsStory {...args} />
+}`,...(c=(i=t.parameters)==null?void 0:i.docs)==null?void 0:c.source}}};var d,S,l;e.parameters={...e.parameters,docs:{...(d=e.parameters)==null?void 0:d.docs,source:{originalSource:`{
+  name: "Component",
+  render: args => <PillboxOnlyStory {...args} />
+}`,...(l=(S=e.parameters)==null?void 0:S.docs)==null?void 0:l.source}}};const Ar=["LabelStatesAndThemes","LabelBackgrounds","LabelComponent"];export{t as LabelBackgrounds,e as LabelComponent,o as LabelStatesAndThemes,Ar as __namedExportsOrder,Er as default};
