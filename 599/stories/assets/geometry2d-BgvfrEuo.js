@@ -1,1 +1,0 @@
-const o=t=>t*Math.sqrt(3)/2,c=t=>{const a=o(t);return`M ${t/2} 0 L 0 ${a} L ${t} ${a} Z`},e=t=>`0 0 ${t} ${o(t)}`,l=(t,a)=>Array.from({length:a},(i,r)=>{const s=r/a*Math.PI*2;return{x:Math.cos(s)*t,y:Math.sin(s)*t}}),n=t=>{let a=0;return t.forEach(i=>{const r=Math.hypot(i.x,i.y);Number.isFinite(r)&&r>a&&(a=r)}),a};export{o as a,l as b,c,n as d,e as g};
