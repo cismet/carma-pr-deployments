@@ -1,0 +1,1 @@
+import{r}from"./index-f9CH5uyH.js";import{d as t}from"./LineVisualizer-CUKhsynV.js";const s=()=>{const e=r.useContext(t);if(e===void 0)throw new Error("useLabelOverlay must be used within a LabelOverlayProvider");return e};export{s as u};
