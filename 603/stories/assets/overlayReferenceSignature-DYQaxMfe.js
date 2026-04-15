@@ -1,1 +1,0 @@
-const f=new WeakMap;let o=1;const c=e=>{if(e==null)return"";if(typeof e=="object"||typeof e=="function"){const n=e,t=f.get(n);if(t)return`ref:${t}`;const r=o++;return f.set(n,r),`ref:${r}`}return String(e)};export{c as g};
