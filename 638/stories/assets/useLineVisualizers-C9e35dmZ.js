@@ -1,0 +1,1 @@
+import{u,g as i}from"./useLineSegmentVisualizers-Cij0cOBq.js";const r=(e,s=!0)=>{u(e,s),i(e,s)};export{r as u};
