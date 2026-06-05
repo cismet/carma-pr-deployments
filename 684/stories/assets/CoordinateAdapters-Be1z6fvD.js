@@ -1,0 +1,1 @@
+import{b as r,a,C as i}from"./Elevation-D0bp48eG.js";const s=t=>i.fromDegrees(t.longitude,t.latitude,t.altitude),g=t=>{const e=r.fromCartesian(t);return{latitude:a.toDegrees(e.latitude),longitude:a.toDegrees(e.longitude),altitude:e.height}};export{s as c,g};
