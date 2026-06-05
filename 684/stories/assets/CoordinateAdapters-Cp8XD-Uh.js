@@ -1,1 +1,0 @@
-import{a as r,b as i,C as a}from"./Elevation-clft-GNg.js";const s=t=>r.fromDegrees(t.longitude,t.latitude,t.altitude),g=t=>{const e=i.fromCartesian(t);return{latitude:a.toDegrees(e.latitude),longitude:a.toDegrees(e.longitude),altitude:e.height}};export{s as c,g};
