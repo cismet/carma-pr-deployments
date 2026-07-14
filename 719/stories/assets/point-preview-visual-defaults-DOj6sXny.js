@@ -1,1 +1,0 @@
-import{R as e}from"./custom-shaders-D4UI1CUM.js";import"./index-Bwr7gTdO.js";import"./index-f9CH5uyH.js";const a={primitiveId:"measurement-preview-point-ring",scalingMode:"screen",targetScreenRadiusCssPx:32,innerHoleRadiusRatio:.33,alpha:.6,materialPreset:e.COLOR,smoothingSampleCount:90,smoothingWindowMs:300,smoothingWeightDecayGamma:2};export{a as p};
