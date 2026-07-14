@@ -1,0 +1,1 @@
+import{h as i,i as a,C as r}from"./custom-shaders-CjVE_hey.js";import"./index-f9CH5uyH.js";import"./index-Bwr7gTdO.js";const n=t=>r.fromDegrees(t.longitude,t.latitude,t.altitude),d=t=>{const e=i.fromCartesian(t);return{latitude:a.toDegrees(e.latitude),longitude:a.toDegrees(e.longitude),altitude:e.height}};a.toRadians(10);a.toRadians(120);export{n as c,d as g};
