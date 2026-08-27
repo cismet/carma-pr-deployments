@@ -1,1 +1,0 @@
-import{dx as a,r as m,j as r}from"./index-CJjn7_l_.js";function u({position:o,children:t,order:n}){const{addControl:e,removeControl:s}=a();return m.useEffect(()=>(e({position:o,component:t,order:n}),()=>{s({position:o,component:t,order:n})}),[t]),r.jsx(r.Fragment,{})}export{u as C};
