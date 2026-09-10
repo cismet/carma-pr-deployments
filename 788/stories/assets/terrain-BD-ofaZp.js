@@ -1,1 +1,0 @@
-const r={url:"https://cesium-wupp-terrain.cismet.de/terrain2020"},e={url:"https://cesium-wupp-terrain.cismet.de/dom_2024_1m"},t={id:"nrw-dgm1-terrarium",url:"https://terrain.cismet.de/services/nrw/dgm1_dhhn2016_terrarium/tiles/{z}/{x}/{y}.png",tileSize:512,minzoom:5,maxzoom:16,encoding:"terrarium",bounds:[6.48883,50.831527,7.764078,51.597321]};export{t as N,r as W,e as a};
