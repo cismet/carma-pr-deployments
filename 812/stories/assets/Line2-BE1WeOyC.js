@@ -1,0 +1,1 @@
+import{L as r,a as s}from"./LineSegments2-DRJHBm8Q.js";import{L as i}from"./LineGeometry-BwkEAT43.js";class L extends r{constructor(e=new i,t=new s({color:Math.random()*16777215})){super(e,t),this.isLine2=!0,this.type="Line2"}}export{L};
