@@ -1,0 +1,16 @@
+import{j as a}from"./jsx-runtime-DNp_qQjF.js";import{L as g,a as u,b as A,R as E,c as R,d as L,P as b}from"./LabelMarkers.story-helpers-B2eUvxCk.js";import"./index-CSJjS6Ct.js";import"./draggable-debug-anchor-0kqwkLdm.js";import"./clamp-co6UzHBn.js";import"./pi-mVFkAveX.js";import"./AnnotationsProvider-C12gHIQa.js";import"./index-BiqCsKMD.js";import"./index-D1cknlJ6.js";import"./index-Dt1MMDS6.js";import"./index-DNNUJLgJ.js";import"./context-ByOMqU15.js";import"./button-zV0VwOeY.js";import"./StripChartPanel-D16zj1fl.js";import"./ControlButtonStyler-C_yTvQxK.js";import"./index-EAHNcU7k.js";import"./angles-DwBSWmgw.js";import"./useLineSegmentVisualizers-DC3LbUg5.js";import"./angle-normalization-itBhVa_t.js";import"./geometry2d-CX4pp3QL.js";import"./camera-local-mercator-fit-DJ7jjs7m.js";import"./iframe-BNO-jm4A.js";import"./three.module-BbS8FVfS.js";import"./custom-shaders-DkJBwYxv.js";import"./negative-pi-to-pi-B-FiLZ9M.js";import"./useCesiumFovWheelZoom-CLdHt54M.js";import"./ViewStateNavigationManagerContext-DoXXQjG8.js";import"./maplibre-gl-BvLDYGIs.js";import"./carma-guards-D_Qjv-KA.js";import"./Scene-D3BCsnZ0.js";import"./meshopt_encoder.module-D2BiFfpM.js";import"./meshopt_decoder.module-Clo9gF-m.js";/* empty css                                      */import"./config-D9YyMdts.js";import"./length-format-BQI28fDZ.js";import"./decimal-format-B9rCT_ZY.js";import"./locales-DbHdB30_.js";import"./formatSignificantNumber-DYV3PWeu.js";import"./camera-intrinsics-utils-tHu2xf2P.js";import"./Intrinsics-4XFSc-KQ.js";import"./wms-uhWQECSC.js";import"./private-shims-5e5gEO17.js";import"./CesiumWidget-D0yeP0gO.js";import"./pitch-conventions-DmlZPLS9.js";import"./Picking-Bf27he1I.js";import"./svgProjection-Bey-wwPZ.js";import"./constants-C6-_E4xW.js";import"./useLineVisualizers-DsSGUeFh.js";import"./barmen-background-hySy4eb_.js";import"./centered-story-frame-CDOkUrj2.js";const Er={title:"Annotations/Labels",id:"overlay-labels",args:g,argTypes:u,parameters:{layout:"fullscreen",...A}},o={name:"States and Themes",args:{...E},render:r=>a.jsx(R,{...r})},t={name:"Backgrounds",args:{storyBackground:"urban"},render:r=>a.jsx(L,{...r})},e={name:"Component",render:r=>a.jsx(b,{...r})};var m,s,p;o.parameters={...o.parameters,docs:{...(m=o.parameters)==null?void 0:m.docs,source:{originalSource:`{
+  name: "States and Themes",
+  args: {
+    ...REPRESENTATIVE_CASES_STORY_ARGS
+  },
+  render: args => <LabelStatesAndThemesStory {...args} />
+}`,...(p=(s=o.parameters)==null?void 0:s.docs)==null?void 0:p.source}}};var n,i,d;t.parameters={...t.parameters,docs:{...(n=t.parameters)==null?void 0:n.docs,source:{originalSource:`{
+  name: "Backgrounds",
+  args: {
+    storyBackground: "urban"
+  },
+  render: args => <LabelBackgroundsStory {...args} />
+}`,...(d=(i=t.parameters)==null?void 0:i.docs)==null?void 0:d.source}}};var c,S,l;e.parameters={...e.parameters,docs:{...(c=e.parameters)==null?void 0:c.docs,source:{originalSource:`{
+  name: "Component",
+  render: args => <PillboxOnlyStory {...args} />
+}`,...(l=(S=e.parameters)==null?void 0:S.docs)==null?void 0:l.source}}};const Rr=["LabelStatesAndThemes","LabelBackgrounds","LabelComponent"];export{t as LabelBackgrounds,e as LabelComponent,o as LabelStatesAndThemes,Rr as __namedExportsOrder,Er as default};

@@ -1,0 +1,1 @@
+const t={POINT:"point",POV:"pov",AREA_CENTROID:"area-centroid"},A={AUTO:"auto",ALWAYS:"always",NEVER:"never"},n=({anchorKind:o=t.POINT})=>o===t.AREA_CENTROID,s=({anchorKind:o=t.POINT,occlusionMode:O=A.AUTO})=>O!==A.AUTO?O:n({anchorKind:o})?A.NEVER:A.ALWAYS,e=o=>s(o)===A.ALWAYS;export{t as P,e as a,n as s};
