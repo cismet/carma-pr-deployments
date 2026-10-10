@@ -1,0 +1,22 @@
+import{j as e}from"./jsx-runtime-DNp_qQjF.js";import{D as s,r as l,R as p,a as d}from"./resolution-by-fov-and-range-plot-Ct5Rn8fl.js";import{G as x,a as o}from"./mercator-zoom.shared-dXAr5Nw9.js";import"./index-CSJjS6Ct.js";import"./angles-DdEU-Mjq.js";import"./pi-MErR2jrQ.js";import"./camera-local-mercator-fit-EKXchsIR.js";import"./iframe-CLBrwcU9.js";import"./three.module-ChcGQZK5.js";import"./geo-DgeKvYSq.js";import"./zoom-BADcZy_j.js";import"./___vite-browser-external_commonjs-proxy-N_IygbFj.js";import"./StripChartPanel-B06MMiIF.js";import"./index-DH9_jRe-.js";import"./index-D1cknlJ6.js";import"./ControlButtonStyler-CTIhpmAd.js";import"./button-B0cdcz65.js";import"./useLineSegmentVisualizers-C3toKd3_.js";import"./index-tR1Ti_vO.js";import"./angle-normalization-YG9HBJHL.js";import"./geometry2d-dlafJNoo.js";const b={title:"Map Navigation/Camera and Scale",id:"geo",args:{xAxisMode:s.FOV_DEG},argTypes:{xAxisMode:{options:Object.values(s),control:{type:"inline-radio"},description:"Horizontal axis as direct FOV degrees, log(fov), or log(tan(fov / 2))."}},parameters:{layout:"fullscreen"}},t={name:"Range by FOV and Resolution",render:n=>e.jsxs(x,{label:"Range by FOV Overview",values:[l(n.xAxisMode),"compare range and resolution views"],children:[e.jsxs("section",{style:o.layout.intro,children:[e.jsx("p",{style:o.text.introText,children:"Dolly zoom trades field of view against distance to keep subject size fixed."}),e.jsx("p",{style:o.text.introText,children:"range = k / tan(fov / 2)"}),e.jsx("p",{style:o.text.introText,children:"The upper plot shows range as the output. The lower plot shows the matching center resolution instead."})]}),e.jsx("section",{style:o.layout.panel,children:e.jsx(p,{xAxisMode:n.xAxisMode})}),e.jsx("section",{style:o.layout.panel,children:e.jsx(d,{xAxisMode:n.xAxisMode})})]})};var a,r,i;t.parameters={...t.parameters,docs:{...(a=t.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  name: "Range by FOV and Resolution",
+  render: args => <GeoChartStoryFrame label="Range by FOV Overview" values={[readDollyZoomXAxisStatusValue(args.xAxisMode), "compare range and resolution views"]}>
+      <section style={GEO_STORY_STYLES.layout.intro}>
+        <p style={GEO_STORY_STYLES.text.introText}>
+          Dolly zoom trades field of view against distance to keep subject size
+          fixed.
+        </p>
+        <p style={GEO_STORY_STYLES.text.introText}>range = k / tan(fov / 2)</p>
+        <p style={GEO_STORY_STYLES.text.introText}>
+          The upper plot shows range as the output. The lower plot shows the
+          matching center resolution instead.
+        </p>
+      </section>
+      <section style={GEO_STORY_STYLES.layout.panel}>
+        <RangeByFovAndResolutionPanel xAxisMode={args.xAxisMode} />
+      </section>
+      <section style={GEO_STORY_STYLES.layout.panel}>
+        <ResolutionByFovAndRangePanel xAxisMode={args.xAxisMode} />
+      </section>
+    </GeoChartStoryFrame>
+}`,...(i=(r=t.parameters)==null?void 0:r.docs)==null?void 0:i.source}}};const L=["RangeByFovAndResolution"];export{t as RangeByFovAndResolution,L as __namedExportsOrder,b as default};
