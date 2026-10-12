@@ -1,0 +1,1 @@
+import{A as a}from"./avif-pyramid-preview-source-C43eTlS6.js";const n=async(e,r,t)=>{const{TiffPreviewSource:i}=await import("./tiff-preview-source-x2MN7VDl.js").then(function(o){return o.t});return new i(e,r,t)};export{a as AvifPyramidPreviewSource,n as createTiffPreviewSource};
