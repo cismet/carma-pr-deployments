@@ -1,0 +1,1 @@
+import{V as e}from"./constants-C6-_E4xW.js";const l=(i,n,r=e)=>{const t=i.direction.dot(n.normal);if(Math.abs(t)<=r)return null;const o=-n.distanceToPoint(i.origin)/t;return Number.isFinite(o)?i.origin.clone().add(i.direction.clone().multiplyScalar(o)):null};export{l as i};
