@@ -1,0 +1,32 @@
+{
+  "version": 8,
+  "name": "verkehr",
+  "metadata": {
+    "carmaConf": {
+      "layerInfo": {
+        "title": "Verkehr, Tag und Nacht",
+        "description": "Autos, Busse und Lkw auf dem Straßennetz des Modells, bei Nacht mit Scheinwerfern und Rücklichtern auf dunkler Karte. Straßennetz und Tagesmengen stammen aus der Verkehrsbelastung 2020. Der Verlauf über den Tag und die letzten 24 Stunden sind erfunden, bis echte Zählwerte angebunden sind.",
+        "tags": ["Projection Mapping"]
+      },
+      "tools": [
+        {
+          "addon": "trafficAnimation",
+          "config": {
+            "title": "Verkehr",
+            "networkUrl": "assets/dz-b-prm/traffic/verkehrsnetz_osm.json",
+            "sizeScale": 3.5
+          }
+        }
+      ]
+    }
+  },
+  "sources": {},
+  "layers": [
+    {
+      "id": "verkehr-fahrzeuge",
+      "type": "background",
+      "layout": { "visibility": "none" },
+      "metadata": { "carmaConf": { "slot": "trafficAnimation" } }
+    }
+  ]
+}
