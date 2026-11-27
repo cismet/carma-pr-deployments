@@ -2,23 +2,6 @@
 <html lang="de">
   <head>
     <script>
-      // prevents cesium bundle from causing uncaught errors when bundled.
-      // TODO Replace with a proper lazy loading of cesium
-      if (typeof TransformStream === "undefined") {
-        console.warn(
-          "Die TransformStream API wird von diesem Browser nicht unterstützt. Bitte benutzen sie einen unterstützten Browser."
-        );
-        class DummyTransformStream {
-          constructor() {
-            this.readable = null;
-            this.writable = null;
-            this.isDummy = true;
-          }
-        }
-        window.TransformStream = DummyTransformStream;
-      }
-    </script>
-    <script>
       if (
         navigator.standalone ||
         window.matchMedia("(display-mode: standalone)").matches
@@ -546,16 +529,15 @@
         }
       }
     </style>
-    <script type="module" crossorigin src="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/index-DjEIqCAd.js"></script>
+    <script type="module" crossorigin src="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/index-XIqo34GO.js"></script>
     <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/vendor-react-core-CYdYPvPj.js">
-    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/vendor-ui-icons-CNmOGEFM.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/vendor-ui-icons-DMzR5EPQ.js">
     <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/vendor-leaflet-DX9FOFEM.js">
-    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/vendor-ui-DwcBLr7x.js">
-    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/vendor-cismap-C3ZOxI91.js">
-    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/vendor-cesium-DQED3-ll.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/vendor-ui-CvdtUrHd.js">
+    <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/vendor-cismap-qI4YCfOz.js">
     <link rel="modulepreload" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/vendor-maplibre-Bd7gFevx.js">
     <link rel="stylesheet" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/vendor-cismap-DIWnF-po.css">
-    <link rel="stylesheet" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/index-Bc0EHbkj.css">
+    <link rel="stylesheet" crossorigin href="https://cismet.github.io/carma-pr-deployments/871/geoportal/assets/index-ChNQqWSz.css">
   </head>
   <body>
     <div id="root"><div id="splash-loading"></div></div>
